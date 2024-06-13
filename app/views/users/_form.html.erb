@@ -35,7 +35,7 @@
       <br />
       <div class="form-group row justify-content-center">
         <div class="d-grid gap-2 col-4 mx-auto">
-          <%= form.submit "Sign Up", class: "btn btn-lg", id: "viewbutton" %>
+          <%= form.submit(@user.new_record? ?   "Sign Up" : "Update account", class: "btn btn-lg", id: "viewbutton") %>
         </div>
       </div>
       <% end %>
