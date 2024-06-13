@@ -1,0 +1,13 @@
+<div class="container">
+  <% flash.each do |name, msg | %>
+  <div class="alert alert-dismissible fade show success-background text-light mt-2 justify-content-center">
+    <%= msg %>
+    <button
+      type="button"
+      class="btn-close btn-close-white"
+      data-bs-dismiss="alert"
+      aria-label="Close"
+    ></button>
+  </div>
+  <% end %>
+</div>

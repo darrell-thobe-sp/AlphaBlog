@@ -1,0 +1,156 @@
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons";
+
+.navbar {
+  background-color: #ccd7c5 !important;
+  padding: 0.75%;
+}
+
+#returnlink {
+  color: #fa8334;
+  font-size: x-large;
+}
+
+#formcontainer {
+  background-color: #ccd7c5;
+  border-radius: 1em;
+  padding: 2%;
+} 
+
+.nav-link {
+  color: #008080 !important;
+}
+
+#article-list-header {
+  color: #F2EFE9;
+}
+
+#viewbutton {
+  outline-color: #008080;
+  color: #008080;
+  border-color: #008080;
+}
+
+#viewbutton:hover {
+  outline-color: #F2EFE9;
+  color: #F2EFE9;
+  border-color: #F2EFE9;
+  background-color: #008080;
+}
+
+#editbutton {
+  outline-color: #d5a021;
+  color: #d5a021;
+  border-color: #d5a021;
+}
+
+#editbutton:hover {
+  outline-color: #F2EFE9;
+  color: #F2EFE9;
+  border-color: #F2EFE9;
+  background-color: #d5a021;
+}
+
+#deletebutton {
+  outline-color: #96001b;
+  color: #96001b;
+  border-color: #96001b;
+}
+
+#deletebutton:hover {
+  outline-color: #F2EFE9;
+  color: #F2EFE9;
+  border-color: #F2EFE9;
+  background-color: #96001b;
+}
+
+
+.text-title {
+  color: #bf5700;
+}
+
+.success-background {
+  background-color: #ccd7c5;
+}
+
+.error-background {
+  background-color: #96001b;
+
+}
+
+.error-text {
+  color: #96001b;
+}
+
+#card {
+  background-color: #ccd7c5;
+}
+
+#signup {
+  background-color: #008080;
+  color: white;
+  border-radius: 0.75em;
+  padding: 1% 5%;
+}
+
+#alphablog {
+  color: #fa8334;
+  font-size: 4.7em;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #fa8334;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #fa8334;
+}
+
+.nav-item:hover {
+  color: #fa8334;
+}
+
+.nav-link:hover {
+  color: #fa8334;
+}
+
+#home-container {
+  margin-top: 25px;
+  background-color: #ccd7c5;
+  border-radius: 5em;
+  padding: 2%;
+}
+
+.jumbotron {
+  background-image: asset-url("jumbo-copy.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 425px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+body {
+  background: #5b7c99;
+}
+
+#sticky-footer {
+  background-color: #ccd7c5 !important;
+  flex-shrink: none;
+  color: black;
+}
