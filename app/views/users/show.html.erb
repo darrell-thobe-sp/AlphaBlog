@@ -4,15 +4,22 @@
 
 <%= gravatar_for @user, size: 100 %>
 
-<h3 id="article-list-header" class="text-center mt-4 mb-4">
-  Articles
-</h3>
+<div class="text-center mt-4">
+  <% if logged_in? && (@user == current_user || current_user.admin?) %>
+    <%= link_to 'Edit profile', edit_user_path(@user), class: "btn", id: "editbutton" %>
+  <% end %>
+</div>
+
+
+
+<h3 id="article-list-header" class="text-center mt-4 mb-4">Articles</h3>
+
+<div class="flickr_pagination">
+  <%= will_paginate @articles, :container => false %>
+</div>
 
 <%= render 'articles/article' %>
 
-<!-- <div>
-  <%= link_to "Edit this user", edit_user_path(@user) %> |
-  <%= link_to "Back to users", users_path %>
-
-  <%= button_to "Destroy this user", @user, method: :delete %>
-</div> -->
+<div class="flickr_pagination">
+  <%= will_paginate @articles, :container => false %>
+</div>

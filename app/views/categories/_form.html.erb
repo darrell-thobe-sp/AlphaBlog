@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row justify-content-center mb-2">
+      <div class="col-10"><%= render 'shared/errors', obj: @category %></div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <%= form_with(model: @category, class: "shadow-lg p-3 mb-3 rounded", id:
+        "formcontainer", local: true) do |form| %>
+        <div class="form-group row">
+          <%= form.label :name, "Category name", class: "col-sm-2 col-form-label fs-6 text-title"
+          %>
+          <div class="col-10">
+            <%= form.text_field :name, class: "form-control shadow rounded",
+            placeholder: "Enter a name" %>
+          </div>
+        </div>
+        <br />
+        <div class="form-group row justify-content-center">
+          <div class="d-grid gap-2 col-4 mx-auto">
+            <%= form.submit class: "btn btn-lg", id: "viewbutton" %>
+          </div>
+        </div>
+        <% end %>
+      </div>
+      <%= link_to '[ Cancel and return to articles listing ]', articles_path,
+      class: "text-center", id: 'returnlink' %>
+    </div>
+  </div>

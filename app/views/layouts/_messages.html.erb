@@ -1,6 +1,8 @@
 <div class="container">
-  <% flash.each do |name, msg | %>
-  <div class="alert alert-dismissible fade show success-background text-light mt-2 justify-content-center">
+  <% flash.each do |name, msg | %> 
+  <div
+    class="alert <%= (name=='notice')? "success-background" : "alert-background" %> alert-dismissible fade show  text-light mt-2 justify-content-center"
+  >
     <%= msg %>
     <button
       type="button"

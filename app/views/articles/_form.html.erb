@@ -24,6 +24,14 @@
         </div>
       </div>
       <br />
+      <div class="form-group row">
+        <%= form.label :category, class: "col-sm-2 col-form-label fs-4
+        text-title" %>
+        <div class="col-10">
+          <%= form.collection_select(:category_ids, Category.all, :id, :name, { prompt: "select categories "}, { multiple: true, include_blank: true, size: 3, class: "form-select shadow rounded"}) %>  
+        </div>
+      </div>
+      <br />
       <div class="form-group row justify-content-center">
         <div class="d-grid gap-2 col-4 mx-auto">
           <%= form.submit class: "btn btn-lg", id: "viewbutton" %>
